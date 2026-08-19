@@ -1,0 +1,177 @@
+# Insurance Policy Knowledge Base
+
+**Document Type:** Synthetic Insurance Coverage Policy
+**Purpose:** Hackathon RAG demonstration
+**Important:** These are synthetic policies created for demonstration and testing. They do not represent the actual policies of the named insurers.
+
+---
+
+## CHUNK 001 — UnitedHealthcare — Knee MRI Coverage
+
+**Payer:** UnitedHealthcare
+**Service:** Magnetic Resonance Imaging (MRI) of the Knee
+**Policy Category:** Diagnostic Imaging
+**Coverage Requirement:** Prior authorization may be required.
+
+Knee MRI is considered medically necessary when the member has a documented knee condition, injury, persistent knee pain, instability, or other clinically significant symptoms that require advanced imaging. The clinical documentation should establish the reason for requesting the MRI.
+
+For non-acute conditions, persistent symptoms should generally be documented for an appropriate period and conservative treatment should be attempted when clinically appropriate. Conservative treatment may include physical therapy, medication, activity modification, or other non-operative management.
+
+The MRI should be expected to provide information that contributes to diagnosis, treatment planning, or management of the member's condition.
+
+The authorization request should include the member's diagnosis, symptoms, duration of symptoms, relevant physical examination findings, previous treatment, and clinical rationale for the requested MRI.
+
+---
+
+## CHUNK 002 — Aetna — Knee MRI Coverage
+
+**Payer:** Aetna
+**Service:** Magnetic Resonance Imaging (MRI) of the Knee
+**Policy Category:** Diagnostic Imaging
+**Coverage Requirement:** Prior authorization may be required depending on the member's plan.
+
+Knee MRI may be considered medically necessary when the member has persistent or clinically significant knee symptoms and the treating physician determines that advanced imaging is required for diagnosis or treatment.
+
+The request should identify the underlying diagnosis or suspected condition and provide clinical evidence supporting the need for MRI. When appropriate, initial conservative treatment should have been attempted before advanced imaging is requested.
+
+The requested MRI should have a reasonable likelihood of affecting the diagnosis, treatment plan, or subsequent management of the member's condition.
+
+Clinical documentation should include symptoms, duration, diagnosis or suspected diagnosis, physical examination findings, previous treatment, and the physician's rationale for requesting the MRI.
+
+---
+
+## CHUNK 003 — Cigna — Physical Therapy Coverage
+
+**Payer:** Cigna
+**Service:** Physical Therapy
+**Policy Category:** Rehabilitation
+**Coverage Requirement:** Prior authorization may be required for selected services or plans.
+
+Physical therapy may be covered when the member has a documented medical condition resulting in functional limitation, impairment, pain, weakness, reduced mobility, or another condition appropriate for therapeutic intervention.
+
+The treatment plan should be directed toward improving, restoring, or maintaining functional ability related to the member's diagnosed condition. The requested therapy should be clinically appropriate for the condition being treated.
+
+The provider should establish measurable treatment goals and document the expected benefit of therapy. The number and frequency of requested therapy visits should be consistent with the member's clinical condition and treatment requirements.
+
+Documentation should include the diagnosis, functional limitations, treatment goals, proposed interventions, frequency, duration, and number of requested visits.
+
+---
+
+## CHUNK 004 — Elevance Health — CT Scan Coverage
+
+**Payer:** Elevance Health
+**Service:** Computed Tomography (CT) Scan
+**Policy Category:** Diagnostic Imaging
+**Coverage Requirement:** Prior authorization may be required.
+
+CT imaging may be covered when there is a documented clinical indication supporting the need for advanced diagnostic imaging. The requested body region should correspond to the member's symptoms, diagnosis, or suspected medical condition.
+
+The treating provider should document the reason for the CT scan and explain how the imaging is expected to contribute to diagnosis, evaluation, treatment planning, or management.
+
+When clinically appropriate, less intensive diagnostic methods should be considered before advanced imaging. The requested CT should be medically appropriate for the suspected or established condition.
+
+Authorization documentation should include the diagnosis or suspected diagnosis, symptoms, relevant examination findings, requested body region, previous diagnostic testing when applicable, and clinical rationale.
+
+---
+
+## CHUNK 005 — Humana — Sleep Study Coverage
+
+**Payer:** Humana
+**Service:** Sleep Study / Polysomnography
+**Policy Category:** Diagnostic Testing
+**Coverage Requirement:** Prior authorization may be required.
+
+A sleep study may be covered when the member has documented symptoms or clinical findings suggesting a sleep-related disorder and the treating provider determines that diagnostic sleep testing is medically necessary.
+
+The clinical history should support the suspected sleep disorder. Relevant symptoms may include persistent excessive daytime sleepiness, abnormal sleep-related breathing, loud or disruptive snoring, witnessed breathing abnormalities during sleep, or other clinically significant sleep-related symptoms.
+
+The type of sleep study requested should correspond to the suspected condition and the clinical information available for the member.
+
+The authorization request should include the suspected diagnosis, relevant symptoms, duration or history of symptoms, pertinent medical history, provider assessment, and the reason the requested sleep study is medically necessary.
+
+---
+
+## CHUNK 006 — Blue Cross Blue Shield — Lumbar Spine MRI Coverage
+
+**Payer:** Blue Cross Blue Shield
+**Service:** Magnetic Resonance Imaging (MRI) of the Lumbar Spine
+**Policy Category:** Diagnostic Imaging
+**Coverage Requirement:** Prior authorization may be required depending on the applicable plan.
+
+Lumbar spine MRI may be considered medically necessary for members with persistent or clinically significant lower back symptoms when the clinical findings support the need for advanced imaging.
+
+For non-emergency presentations, conservative management should generally be considered before advanced imaging when clinically appropriate. Conservative management may include medication, physical therapy, activity modification, or other appropriate non-operative treatment.
+
+Advanced imaging may be appropriate when symptoms persist despite conservative management, when significant neurological findings are present, or when the provider identifies another clinical circumstance requiring further evaluation.
+
+The request should include the diagnosis or suspected diagnosis, symptom duration, relevant neurological or physical findings, previous treatment, response to treatment, and clinical rationale for MRI.
+
+---
+
+## CHUNK 007 — Centene — Bariatric Surgery Coverage
+
+**Payer:** Centene
+**Service:** Bariatric Surgery
+**Policy Category:** Surgical Procedures
+**Coverage Requirement:** Prior authorization is required.
+
+Bariatric surgery may be covered when the member satisfies applicable clinical eligibility requirements and the procedure is determined to be medically necessary.
+
+Eligibility may depend on factors including the member's body mass index, obesity-related medical conditions, previous weight-management efforts, and documented clinical evaluation.
+
+The member should undergo appropriate preoperative evaluation and demonstrate that the proposed surgical procedure is clinically appropriate. Relevant obesity-related comorbidities should be documented when they are used to establish medical necessity.
+
+The authorization request should contain the member's current body mass index, relevant medical conditions, previous weight-management interventions, clinical evaluation, proposed procedure, and treating provider documentation supporting the surgical recommendation.
+
+---
+
+## CHUNK 008 — Kaiser Permanente — Cataract Surgery Coverage
+
+**Payer:** Kaiser Permanente
+**Service:** Cataract Surgery
+**Policy Category:** Ophthalmology / Surgical Procedure
+**Coverage Requirement:** Prior authorization may be required.
+
+Cataract surgery may be covered when a clinically significant cataract results in visual impairment that affects the member's functional ability or quality of life.
+
+The treating ophthalmologist should document the presence and clinical significance of the cataract and establish that the member's visual impairment is attributable to the cataract.
+
+Surgery should be considered appropriate when the degree of visual impairment and associated functional limitations justify surgical treatment.
+
+Clinical documentation should include the cataract diagnosis, visual acuity or other relevant visual findings, symptoms, functional limitations, ophthalmologic assessment, and the clinical rationale for recommending surgery.
+
+---
+
+## CHUNK 009 — Molina Healthcare — Echocardiogram Coverage
+
+**Payer:** Molina Healthcare
+**Service:** Echocardiogram
+**Policy Category:** Cardiac Diagnostic Testing
+**Coverage Requirement:** Prior authorization may be required for selected indications.
+
+An echocardiogram may be covered when the member has a documented cardiac condition, cardiovascular symptom, abnormal clinical finding, or other medical indication for cardiac ultrasound evaluation.
+
+The requested echocardiogram should be appropriate for the suspected or established cardiac condition and should be expected to provide clinically useful information for diagnosis, evaluation, treatment planning, or ongoing management.
+
+The treating provider should document the clinical indication and relevant cardiovascular history or findings supporting the request.
+
+Authorization documentation should include the diagnosis or suspected diagnosis, relevant symptoms, cardiovascular history, physical findings when applicable, previous cardiac testing when relevant, and the clinical rationale for the echocardiogram.
+
+---
+
+## CHUNK 010 — Aetna — Colonoscopy Coverage
+
+**Payer:** Aetna
+**Service:** Colonoscopy
+**Policy Category:** Gastroenterology / Diagnostic Procedure
+**Coverage Requirement:** Prior authorization may be required depending on the applicable plan and indication.
+
+Colonoscopy may be covered when performed for an appropriate preventive screening indication or for evaluation of documented gastrointestinal symptoms, abnormal findings, or other clinically relevant conditions.
+
+For screening procedures, eligibility may depend on factors including the member's age, previous screening history, personal medical history, and applicable risk factors.
+
+For diagnostic procedures, the authorization request should document the symptoms, abnormal findings, suspected diagnosis, or other clinical indication supporting the procedure.
+
+The requested colonoscopy should be consistent with the member's clinical circumstances and the purpose of the examination.
+
+Documentation should include the indication for colonoscopy, relevant symptoms or findings, screening history when applicable, personal or family risk factors when clinically relevant, previous colonoscopy history, and the provider's clinical rationale.

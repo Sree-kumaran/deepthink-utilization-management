@@ -1,0 +1,178 @@
+{
+  "rules": [
+    {
+      "rule_id": "R001",
+      "name": "Red Flag Safety Override",
+      "category": "safety_override",
+      "condition": {
+        "field": "red_flag_symptoms",
+        "operator": "equals",
+        "value": true
+      },
+      "action": {
+        "criticality_support": 0.6,
+        "priority_support": 0.5
+      },
+      "impact": "safety_override"
+    },
+    {
+      "rule_id": "R002",
+      "name": "Failed Conservative Treatment",
+      "category": "medical_necessity",
+      "condition": {
+        "field": "conservative_treatment_failed",
+        "operator": "equals",
+        "value": true
+      },
+      "action": {
+        "medical_necessity_support": 0.3
+      },
+      "impact": "supports_medical_necessity"
+    },
+    {
+      "rule_id": "R003",
+      "name": "Clinical Indication Supports Necessity",
+      "category": "clinical",
+      "condition": {
+        "all_of": [
+          {"field": "clinical_indication", "operator": "equals", "value": true},
+          {"field": "medical_necessity_required", "operator": "equals", "value": true}
+        ]
+      },
+      "action": {
+        "medical_necessity_support": 0.25,
+        "criticality_support": 0.05
+      },
+      "impact": "supports_medical_necessity"
+    },
+    {
+      "rule_id": "R004",
+      "name": "Functional Impairment Increases Priority",
+      "category": "priority",
+      "condition": {
+        "field": "functional_impairment",
+        "operator": "equals",
+        "value": true
+      },
+      "action": {
+        "priority_support": 0.2
+      },
+      "impact": "increases_priority"
+    },
+    {
+      "rule_id": "R005",
+      "name": "Prior Authorization Required",
+      "category": "authorization",
+      "condition": {
+        "field": "prior_authorization_required",
+        "operator": "equals",
+        "value": true
+      },
+      "action": {
+        "authorization_required": true
+      },
+      "impact": "sets_authorization_required"
+    },
+    {
+      "rule_id": "R006",
+      "name": "Missing Documentation Forces More Info",
+      "category": "documentation",
+      "condition": {
+        "field": "documentation_missing",
+        "operator": "equals",
+        "value": true
+      },
+      "action": {
+        "force_decision": "more_info_required",
+        "priority_support": 0.15
+      },
+      "impact": "forces_more_info_required"
+    },
+    {
+      "rule_id": "R007",
+      "name": "Strong Evidence Relevance Boosts Necessity",
+      "category": "medical_necessity",
+      "condition": {
+        "field": "max_relevance_score",
+        "operator": "greater_than_or_equal",
+        "value": 0.9
+      },
+      "action": {
+        "medical_necessity_support": 0.15
+      },
+      "impact": "supports_medical_necessity"
+    },
+    {
+      "rule_id": "R008",
+      "name": "Chronic Symptom Duration",
+      "category": "criticality",
+      "condition": {
+        "field": "symptom_duration_weeks",
+        "operator": "greater_than_or_equal",
+        "value": 12
+      },
+      "action": {
+        "criticality_support": 0.1
+      },
+      "impact": "increases_criticality"
+    },
+    {
+      "rule_id": "R009",
+      "name": "Extended Conservative Treatment",
+      "category": "clinical",
+      "condition": {
+        "all_of": [
+          {"field": "physical_therapy", "operator": "equals", "value": true},
+          {"field": "physical_therapy_duration_weeks", "operator": "greater_than_or_equal", "value": 6}
+        ]
+      },
+      "action": {
+        "medical_necessity_support": 0.1
+      },
+      "impact": "supports_medical_necessity"
+    },
+    {
+      "rule_id": "R010",
+      "name": "High or Critical Severity Override",
+      "category": "safety_override",
+      "condition": {
+        "field": "severity",
+        "operator": "in",
+        "value": ["high", "critical"]
+      },
+      "action": {
+        "criticality_support": 0.5,
+        "priority_support": 0.3
+      },
+      "impact": "increases_criticality"
+    },
+    {
+      "rule_id": "R011",
+      "name": "Missing Clinical Indication Blocks Necessity",
+      "category": "medical_necessity",
+      "condition": {
+        "field": "clinical_indication",
+        "operator": "equals",
+        "value": false
+      },
+      "action": {
+        "force_medical_necessity_status": "not_supported"
+      },
+      "impact": "blocks_medical_necessity"
+    },
+    {
+      "rule_id": "R012",
+      "name": "Eligibility Check - Recognized Insurance Plan",
+      "category": "eligibility",
+      "condition": {
+        "field": "insurance_plan",
+        "operator": "in",
+        "value": ["Plan A", "Plan B", "Plan C"]
+      },
+      "action": {
+        "eligibility_confirmed": true
+      },
+      "impact": "confirms_eligibility"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+/* Enable class-based dark mode (toggled via ThemeContext adding .dark to <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Page-level surfaces */
+  --color-bg: #F6F5FB;
+  --color-header: #FFFFFF;
+  --color-surface: #FFFFFF;
+  --color-surface-secondary: #F1EFF9;
+  --color-border: #E4E1EF;
+
+  /* Text */
+  --color-text-primary: #1E1B2E;
+  --color-text-secondary: #5B5570;
+  --color-text-muted: #8E879F;
+
+  /* Brand / primary */
+  --color-primary: #7C5CFC;
+  --color-primary-hover: #6D4AFF;
+  --color-primary-light: #A78BFA;
+
+  /* Sidebar — always dark purple, in both light and dark app themes */
+  --color-sidebar: #171329;
+  --color-sidebar-secondary: #211A3A;
+  --color-sidebar-active: #6D4AFF;
+  --color-sidebar-hover: #211A3A;
+  --color-sidebar-text: #F8F7FC;
+  --color-sidebar-text-secondary: #B8B2C7;
+  --color-sidebar-border: #302A40;
+
+  /* Status colors */
+  --color-success: #16A34A;
+  --color-success-bg: rgba(34, 197, 94, 0.12);
+  --color-warning: #B45309;
+  --color-warning-bg: rgba(245, 158, 11, 0.12);
+  --color-danger: #E11D48;
+  --color-danger-bg: rgba(244, 63, 94, 0.12);
+
+  /* Shadows */
+  --shadow-card: 0 1px 3px rgba(30, 27, 46, 0.08), 0 1px 2px rgba(30, 27, 46, 0.04);
+}
+
+.dark {
+  /* Layered dark UI: darkest = page bg, then header, then cards, then inputs/secondary */
+  --color-bg: #0F0D18;
+  --color-header: #14111F;
+  --color-surface: #181522;
+  --color-surface-secondary: #211D2D;
+  --color-border: #302A40;
+
+  --color-text-primary: #F8F7FC;
+  --color-text-secondary: #B8B2C7;
+  --color-text-muted: #8E879F;
+
+  --color-primary: #7C5CFC;
+  --color-primary-hover: #6D4AFF;
+  --color-primary-light: #A78BFA;
+
+  /* Sidebar stays the same dark purple in both modes */
+  --color-sidebar: #171329;
+  --color-sidebar-secondary: #211A3A;
+  --color-sidebar-active: #6D4AFF;
+  --color-sidebar-hover: #211A3A;
+  --color-sidebar-text: #F8F7FC;
+  --color-sidebar-text-secondary: #B8B2C7;
+  --color-sidebar-border: #302A40;
+
+  --color-success: #4ADE80;
+  --color-success-bg: rgba(34, 197, 94, 0.12);
+  --color-warning: #FBBF24;
+  --color-warning-bg: rgba(245, 158, 11, 0.12);
+  --color-danger: #FB7185;
+  --color-danger-bg: rgba(244, 63, 94, 0.12);
+
+  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+html {
+  color-scheme: light;
+}
+html.dark {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-bg text-text-primary transition-colors duration-200;
+}
+
+/* Make sure any form controls stay readable in dark mode too */
+input,
+textarea,
+select {
+  color: var(--color-text-primary);
+  background-color: var(--color-surface-secondary);
+}
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-text-muted);
+}
